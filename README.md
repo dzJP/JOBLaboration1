@@ -1,5 +1,5 @@
-duck
+Duck
 
-mahmut
+Mahmut
 
-cat
+Cat
