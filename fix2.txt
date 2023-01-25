@@ -1,1 +1,73 @@
+Steps 1-15 for the assignment.
+
+1.
+mkdir (local repo folder)
+cd (local repo folder)
+echo "# JOBLaboration1" >> README.md
+git init
+git add README.md
+git commit -m 'first commit'
+git branch -M main
+git remote add origin https://github.com/dzJP/JOBLaboration1.git
+git push -u origin main
+
+2. 
+vi README.md
+add duck, moose, cat
+git add README.md
+git commit -m 'initial commit'
+git reflog
+git push
+git checkout -b feature1
+vi README.md
+edit the README file
+git add README.md
+git commit -m 'added dog as 4th animal and changed moose to mouse'
+git push --set-upstream origin feature1
+
+3.
+git checkout main
+vi README.md
+edit the README file
+git add README.md
+git commit -m 'changed moose to mahmut'
+git reflog
+git push
+git merge feature1
+CONFLICT
+vi README.md
+SOLVE CONFLICT
+git reflog
+git log --oneline
+git add REAMDE.md
+git commit -m 'merging feature1 into main after solving conflicts'
+git push
+
+4.
+git tag extinct 91faa86
+git push --tags 
+git log
+git reset HEAD~1
+git reflog
+git pull --rebase
+git push origin main
+git log
+git checkout -b feature2
+git checkout main
+vi README.md
+edit the README
+git add README.md
+git commit -m 'first letter in the animal names changed from lowercase to uppercase'
+git checkout feature2
+echo > fix1.txt
+git add fix1.txt
+git commit -m 'created and added fix1.txt file'
+echo > fix2.txt
+git add fix2.txt
+git commit -m 'created and added fix2.txt file'
+git reflog 
+git push
+git checkout main
+git cherry-pick 0d8e0cd731ea1ec42f6fa457427cc87a94bffe64
+
 
