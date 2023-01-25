@@ -70,4 +70,11 @@ git push
 git checkout main
 git cherry-pick 0d8e0cd731ea1ec42f6fa457427cc87a94bffe64
 
-
+5.
+touch .gitignore
+ls -a
+vi .gitignore
+edit the .gitignore
+git add .gitignore
+git commit -m 'MESSAGE'
+git push
